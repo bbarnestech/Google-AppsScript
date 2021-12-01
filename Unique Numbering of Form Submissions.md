@@ -26,4 +26,4 @@ function onFormSubmit()
 	sheet.getRange("T1").setValue(bugCount);
 };
 ```
-This code should produce unique number FY01-0001 and increment the number in T1 to 0002 for next usage. 
+This code should produce unique number FY01-0001 in cell B1 and increment the number in T1 to 0002 for next usage. 
