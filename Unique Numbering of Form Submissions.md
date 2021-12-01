@@ -1,6 +1,8 @@
 Create a unique ID number for each form submission in a Google Forms repsonse Sheet.
+
 &nbsp;
 For the purposes of this example a common item number prefix is stored in cell S1 (FY01-) and a number stored in cell T1 (0001).  The number of digits for the number in T1 can be controlled via cell formatting.
+
 &nbsp;
 The getLastRowSpecial function can be found [HERE - GetLastRow_Special](https://github.com/bbarnestech/Google-AppsScript/blob/main/GetLastRow_Special)
 
