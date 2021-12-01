@@ -1,5 +1,5 @@
-\\Check row 0 (typically timestamp of form submission) for last cell with data and return the row number as rowNum
-\\The row to be checked needs to be clear of full column array functions or other formula calculations that may make the system think that the row has data
+//Check row 0 (typically timestamp of form submission) for last cell with data and return the row number as rowNum
+//The row to be checked needs to be clear of full column array functions or other formula calculations that may make the system think that the row has data
 
 function getLastRowSpecial(range){
   var rowNum = 0;
