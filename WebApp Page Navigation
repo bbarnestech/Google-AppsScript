@@ -1,5 +1,5 @@
-\\doGet function that returns evaluated named page if e = the pages name 
-\\else returns the landing page (in this example the landing pages name is 'landing_page')
+\\doGet function that returns evaluated named page if e.parameter.page = the pages name 
+\\Else returns the landing page (in this example the landing pages name is 'landing_page')
 
 function doGet(e) {
   Logger.log( Utilities.jsonStringify(e) );
@@ -12,7 +12,8 @@ function doGet(e) {
 
 
 
-\\getScriptUrl function to gets and returns the current webapps script URL for use with navigation buttons or links
+\\getScriptUrl function to get and return the current webapps script URL for use with navigation buttons or links
+\\The desired page name is appended to the URL in a link or button elsewhere in the app.  (ex. '<?!=url?>?page=another_page')
 
 function getScriptUrl() {
   var url = ScriptApp.getService().getUrl();
