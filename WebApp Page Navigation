@@ -1,0 +1,18 @@
+
+
+function doGet(e) {
+  Logger.log( Utilities.jsonStringify(e) );
+  if (!e.parameter.page) {
+    return HtmlService.createTemplateFromFile('landing_page').evaluate();
+  } else {
+    return HtmlService.createTemplateFromFile(e.parameter['page']).evaluate();
+  }
+}
+
+function getScriptUrl() {
+  var url = ScriptApp.getService().getUrl();
+  return url;
+}
+
+<HTML>
+<a <?var url = getScriptUrl();?> href='<?!=url?>?page=another_page';><button type="button">Navigate to Another Page</button></a>
