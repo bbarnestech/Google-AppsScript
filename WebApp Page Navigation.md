@@ -1,3 +1,4 @@
+```
 \\doGet function that returns evaluated named page if e.parameter.page = the pages name 
 \\Else returns the landing page (in this example the landing pages name is 'landing_page')
 
@@ -26,3 +27,4 @@ function getScriptUrl() {
 
 <HTML>
 <a <?var url = getScriptUrl();?> href='<?!=url?>?page=another_page';><button type="button">Navigate to Another Page</button></a>
+```
