@@ -1,4 +1,4 @@
-Prevents forms from submitting via the normal html method.
+Javascript that prevents forms from submitting via the normal html method.
 
 ```
 // Prevent forms from submitting.
