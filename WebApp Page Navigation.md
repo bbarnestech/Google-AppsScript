@@ -1,8 +1,8 @@
-```
-//doGet function that returns evaluated named page if e.parameter.page = the pages name
-//Save 'property1' as user parameter for use elsewhere within the app
-//Else returns the landing page (in this example the landing pages name is 'landing_page')
 
+doGet function that returns evaluated named page if e.parameter.page = the pages name
+Save 'property1' as user parameter for use elsewhere within the app
+Else returns the landing page (in this example the landing pages name is 'landing_page')
+```
 function doGet(e) {
   Logger.log( Utilities.jsonStringify(e) );
   //If page parameter doesn't exist, load 'landing_page'
@@ -17,12 +17,12 @@ function doGet(e) {
     return HtmlService.createTemplateFromFile(e.parameter['page']).evaluate();
   }
 }
+```
 
 
-
-//getScriptUrl function to get and return the current webapps script URL for use with navigation buttons or links
-//The desired page name is appended to the URL in a link or button elsewhere in the app.  (ex. '<?!=url?>?page=another_page')
-
+getScriptUrl function to get and return the current webapps script URL for use with navigation buttons or links
+The desired page name is appended to the URL in a link or button elsewhere in the app.  (ex. '<?!=url?>?page=another_page')
+```
 function getScriptUrl() {
   var url = ScriptApp.getService().getUrl();
   return url;
