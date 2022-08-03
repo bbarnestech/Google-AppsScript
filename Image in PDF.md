@@ -8,7 +8,7 @@ PDF_Template.html
     <base target="_top">
   </head>
   <body>
-    <img src='data:<?= imageData ?>' width='106' height='50' alt='SampleImage'/>
+    <img src='data:<?= imageData ?>' alt='SampleImage'/>
   </body>
 </html>
 ```
