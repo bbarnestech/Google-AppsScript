@@ -27,11 +27,11 @@ function getScriptUrl() {
   var url = ScriptApp.getService().getUrl();
   return url;
 }
+```
 
 
-
-//HTML sample of button (wrapped in anchor tags for url generation) that navigates to a page named 'another_page' if the page exists
-
+HTML sample of button (wrapped in anchor tags for url generation) that navigates to a page named 'another_page' if the page exists
+```
 <HTML>
 <a <?var url = getScriptUrl();?> href='<?!=url?>?page=another_page';><button type="button">Navigate to Another Page</button></a>
 ```
