@@ -1,4 +1,4 @@
-POST proxy is a method of writing data to a protected spreadsheet without granting the app end user write access to the spreadsheet.
+POST proxy method of writing data to a protected spreadsheet without granting the app end user write access to the spreadsheet.
 
 2 separate Apps Scripts are required.  
 
