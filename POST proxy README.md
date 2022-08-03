@@ -1,6 +1,6 @@
-POST proxy method of writing data to a protected spreadsheet without granting the app end user write access to the spreadsheet.
+### POST proxy method of writing data to a protected spreadsheet without granting the app end user write access to the spreadsheet.
 
-2 separate Apps Scripts are required.  
+*2 separate Apps Scripts are required.*  
 
 1. Front end app
     - Contains the user front end app such as an HTML form.  The app submits form data by sending as a POST payload to the back end app.
